@@ -10,13 +10,7 @@ const serializeFolder = folder => ({
     name: xss(folder.name),
 })
 
-const serializeNote = note => ({
-    id: note.id,
-    note_name: xss(note.note_name),
-    content: xss(note.content),
-    folder: note.folder,
-    modified: note.modified,
-})
+
 
 foldersRouter
     .route('/')
